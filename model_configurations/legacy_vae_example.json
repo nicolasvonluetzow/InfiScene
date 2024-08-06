@@ -1,0 +1,38 @@
+{
+    "model": {
+        "dim": 64,
+        "dim_mults": [
+            1,
+            2,
+            4
+        ],
+        "self_att_resolutions": [
+            4
+        ],
+        "cross_att_resolutions": [
+            4
+        ],
+        "num_res_blocks": 4,
+        "heads": 1,
+        "dropout_prob": 0.1,
+        "sigma_min": 0.01,
+        "sigma_max": 100,
+        "cfg": false,
+        "num_conditions": 2,
+        "preconditioning": "edm",
+        "use_new_attention_order": true,
+        "add_conditions_to_input": false,
+        "add_flipped_conditions": [],
+        "floorplan_input": false,
+        "boundary_input": false,
+        "height_conditioning": false
+    },
+    "vae": {
+        "chunk_size": 64,
+        "latent_size": 32,
+        "latent_channels": 1,
+        "dim": 64,
+        "n_blocks": 1,
+        "path": "PATH TO VAE MODEL"
+    }
+}

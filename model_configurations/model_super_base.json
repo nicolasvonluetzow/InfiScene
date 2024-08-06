@@ -1,0 +1,32 @@
+{
+    "model": {
+        "dim": 64,
+        "dim_mults": [
+            1,
+            2,
+            4
+        ],
+        "self_att_resolutions": [
+            4
+        ],
+        "cross_att_resolutions": [],
+        "num_res_blocks": 4,
+        "heads": 1,
+        "dropout_prob": 0.1,
+        "sigma_min": 0.01,
+        "sigma_max": 100,
+        "cfg": false,
+        "cfg_mode": "single",
+        "num_conditions": 0,
+        "preconditioning": "noise",
+        "use_new_attention_order": true,
+        "use_scale_shift_norm": true,
+        "add_conditions_to_input": false,
+        "add_flipped_conditions": [],
+        "floorplan_input": false,
+        "boundary_input": false,
+        "height_conditioning": false,
+        "data_downsample_factor": 1,
+        "is_super_scaling": true
+    }
+}
